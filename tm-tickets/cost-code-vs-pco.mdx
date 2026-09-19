@@ -1,0 +1,53 @@
+---
+title: "Cost Code vs. PCO Number"
+description: "Which one your accounting team needs, which one the GC needs, and what goes wrong when either is missing."
+icon: "barcode"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="60.2" />
+
+<Note>
+**The short version.** Two numbers for two different audiences. **Cost Code** is internal — it's how your own accounting tracks the money. **PCO Number** is external — it's how the GC tracks the potential change order.
+</Note>
+
+## Who needs which
+
+<CardGroup cols={2}>
+  <Card title="Cost Code" icon="building-columns">
+    **Your accounting team.** Which bucket in your job cost the hours and material land in.
+
+    Wrong code → the job costs look fine while one phase quietly bleeds.
+  </Card>
+  <Card title="PCO Number" icon="file-signature">
+    **The general contractor.** Which potential change order this ticket belongs to.
+
+    Wrong or missing → the GC can't match your ticket to anything, and it doesn't make it into the change order.
+  </Card>
+</CardGroup>
+
+## What goes wrong downstream
+
+| Missing | Consequence |
+| --- | --- |
+| Cost code | Your job costing is wrong. You find out at closeout. |
+| PCO number | The GC can't tie the ticket to a change. You don't get paid for it. |
+| Both | You did the work for free and can't prove where the money went. |
+
+{/* TODO: confirm whether PCO number is free text or picked from a list, and whether DirtView can roll tickets up by PCO into a change order. If it can, that's the headline of this video. */}
+
+<Tip>
+Get the PCO number from the GC's project engineer **before** the crew starts the extra work, not after. Five minutes on the phone beats a rejected ticket.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Get it signed" icon="signature" href="/tm-tickets/get-a-signature">
+    An unsigned ticket is worth very little.
+  </Card>
+  <Card title="Change Orders" icon="money-bill-trend-up" href="/approvals/change-orders">
+    Where these tickets end up.
+  </Card>
+</CardGroup>

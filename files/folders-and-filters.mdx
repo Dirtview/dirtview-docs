@@ -1,0 +1,38 @@
+---
+title: "Folders, type filters, and the file counters"
+description: "Why photo count and document count differ from total files, and how folders behave when you move things."
+icon: "folder"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="70.2" />
+
+<Note>
+**The short version.** The counters count by **type**, so photos plus documents won't always add up to your total files.
+</Note>
+
+## Why the numbers don't add up
+
+A file is counted once as a file, and separately in its type bucket. Anything that isn't a photo or a document — an archive, a spreadsheet, a video — lands in the total without landing in either of the two counts people look at.
+
+{/* TODO: list every type bucket and state exactly what counts as each. Then this page stops being a workaround and becomes an answer. */}
+
+<Tip>
+If the numbers look wrong, they're probably counting different things rather than losing files. Filter by type to see what's actually there.
+</Tip>
+
+## Moving files between folders
+
+{/* TODO: confirm whether moving a file changes its permissions, its link, or anything referencing it, and whether a moved file stays attached to the RFI or ticket it was on. */}
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Distribution Groups" icon="users" href="/files/distribution-groups">
+    Who gets things automatically.
+  </Card>
+  <Card title="Send Mail" icon="envelope" href="/files/send-mail-and-notifications">
+    And the record of what was delivered.
+  </Card>
+</CardGroup>

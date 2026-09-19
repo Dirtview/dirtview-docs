@@ -1,0 +1,53 @@
+---
+title: "Cómo está organizado DirtView"
+description: "Dos niveles: tu empresa y cada obra. Saber en cuál estás responde casi todas las preguntas."
+icon: "sitemap"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="00.1" />
+
+<Note>
+**En una línea.** El menú de la izquierda es **toda tu empresa**. Todo lo que está dentro de una obra pertenece **solo a esa obra**.
+</Note>
+
+## Dos niveles, nada más
+
+<CardGroup cols={2}>
+  <Card title="Nivel empresa" icon="building">
+    El menú de la izquierda. Tu personal, sus roles, tu lista de obras. Se configura una vez y lo usan todas las obras.
+
+    Empleados · Contactos externos · Roles · Proyectos · Configuración
+  </Card>
+  <Card title="Nivel obra" icon="helmet-safety">
+    Los mosaicos que ves al abrir una obra. Solo existen dentro de esa obra.
+
+    Planos · Especificaciones · RFIs · Envíos · Órdenes de cambio · Formularios · Tickets T&M · Documentos
+  </Card>
+</CardGroup>
+
+## Por qué importa el primer día
+
+<AccordionGroup>
+  <Accordion title="Agregué a alguien a la empresa y no ve la obra">
+    Así funciona. Agregar a una persona a la empresa crea su cuenta. No la agrega a ninguna obra. Eso se hace obra por obra.
+  </Accordion>
+  <Accordion title="Busco los planos en el menú izquierdo y no están">
+    Los planos viven dentro de una obra, porque cada obra tiene un juego distinto. Abre la obra y luego el mosaico **Planos**.
+  </Accordion>
+  <Accordion title="Los números del tablero no cuadran con esta obra">
+    El tablero cuenta todo lo de la empresa, no solo la obra que abriste al final.
+  </Accordion>
+</AccordionGroup>
+
+## Siguiente
+
+<CardGroup cols={2}>
+  <Card title="Iniciar sesión e idioma" icon="right-to-bracket" href="/es/orientation/signing-in-and-language">
+    Entrar y cambiar a español.
+  </Card>
+  <Card title="Leer tu tablero" icon="gauge-high" href="/es/orientation/your-dashboard">
+    Qué cuenta cada número.
+  </Card>
+</CardGroup>

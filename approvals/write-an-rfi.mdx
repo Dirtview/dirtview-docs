@@ -1,0 +1,72 @@
+---
+title: "Writing an RFI that gets answered"
+description: "What goes in Question vs. References, why Location matters, and what Hot priority actually changes."
+icon: "circle-question"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="50.1" />
+
+<Note>
+**The short version.** One question per RFI. Put the question in **Question**, the evidence in **References**, and say where on the job it is.
+</Note>
+
+## Write it
+
+<Steps>
+  <Step title="Ask one question">
+    One question per RFI. Three questions in one RFI comes back with one answer and you've lost two weeks.
+
+    Ask it so a yes/no or a dimension answers it. "Which detail governs at the column line — A-501/3 or S-201/5?" beats "Please clarify the column detail."
+  </Step>
+  <Step title="Put the evidence in References">
+    **Question** is what you're asking. **References** is what you're pointing at — the sheet, the spec section, the photo, the marked-up detail.
+
+    A marked-up sheet in References is the single biggest thing you can do to get a fast answer. → [Marking up a sheet](/drawings/markup-a-sheet)
+  </Step>
+  <Step title="Set the Location">
+    Where on the job. It's how somebody finds it six months later, and it's what makes the RFI log readable when there are 200 of them.
+  </Step>
+  <Step title="Set the priority honestly">
+    **Hot** flags the RFI as urgent.
+
+    {/* TODO: confirm exactly what Hot changes — notification behaviour, sort order, an overdue clock? The curriculum flags this as a known point of confusion, so answer it precisely. */}
+  </Step>
+  <Step title="Set the review routing">
+    Who needs to see it, in what order. → [Review Routing](/approvals/review-routing)
+  </Step>
+  <Step title="Submit it">
+    A draft RFI is not asked. Nobody is notified until you submit.
+  </Step>
+</Steps>
+
+<Warning>
+**Don't mark everything Hot.** Once everything is hot, nothing is, and the one that actually stops work gets the same attention as the rest.
+</Warning>
+
+## What a good RFI looks like
+
+<CardGroup cols={2}>
+  <Card title="Gets answered fast" icon="circle-check">
+    One question · names the conflicting documents · marked-up sheet attached · location set · realistic priority
+  </Card>
+  <Card title="Sits for three weeks" icon="circle-xmark">
+    "Please advise" · no references · three questions in one · no location · marked Hot like the last nine
+  </Card>
+</CardGroup>
+
+<Tip>
+You can talk an RFI in instead of typing it, and the assistant will ask you follow-up questions until it's specific enough to send. → [Talking an RFI into existence](/ai/talk-an-rfi-into-existence)
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Statuses and Ball in Court" icon="hand" href="/approvals/statuses-and-ball-in-court">
+    Where is it, and whose desk is it on?
+  </Card>
+  <Card title="Answering an RFI" icon="reply" href="/approvals/answer-an-rfi">
+    And how to pull the record later.
+  </Card>
+</CardGroup>

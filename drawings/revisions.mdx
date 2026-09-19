@@ -1,0 +1,55 @@
+---
+title: "Revisions: drawing date vs. revision date"
+description: "Uploading a newer sheet supersedes the old one instead of deleting it — which is how you prove which sheet the crew was building from."
+icon: "clock-rotate-left"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="20.5" />
+
+<Note>
+**The short version.** A newer sheet **supersedes** the old one. The old one is still there. That history is the evidence you need when somebody asks why the wall got built in the wrong place.
+</Note>
+
+## Two dates, two meanings
+
+<CardGroup cols={2}>
+  <Card title="Drawing date" icon="calendar">
+    When the designer drew or issued the sheet. It comes off the sheet.
+  </Card>
+  <Card title="Revision date" icon="calendar-check">
+    When this version came into your set. It's about your record, not theirs.
+  </Card>
+</CardGroup>
+
+<Warning>
+On a claim, the question is never "what does the current sheet say?" It's "what sheet was in the field on the day the work was put in place?" That's the revision date, not the drawing date.
+</Warning>
+
+## Uploading a revision
+
+<Steps>
+  <Step title="Upload the new sheet or the new set">
+    Same as the original upload — DirtView matches it to the sheet it replaces.
+
+    {/* TODO: confirm how matching works (by sheet number?) and what happens when the sheet number changed. */}
+  </Step>
+  <Step title="Check the current version is the new one">
+    Everyone on the job should now be opening the new sheet by default.
+  </Step>
+  <Step title="Leave the old one alone">
+    Don't delete superseded sheets. They cost you nothing and they're your proof.
+  </Step>
+</Steps>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Specifications" icon="book" href="/specifications/upload-a-spec-book">
+    Uploaded vs. Published — and why nothing works until you publish.
+  </Card>
+  <Card title="Write an RFI" icon="circle-question" href="/approvals/write-an-rfi">
+    When two sheets disagree, ask.
+  </Card>
+</CardGroup>

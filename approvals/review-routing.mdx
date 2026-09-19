@@ -1,0 +1,52 @@
+---
+title: "Review Routing: adding, reordering, locked reviewers"
+description: "Reviewers who already responded are locked. Changing the reviewer currently holding the item sends it back to you."
+icon: "route"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="50.3" />
+
+<Note>
+**The short version.** Routing is the order people see the item. Anyone who already responded is **locked** — their response is part of the record and can't be edited away.
+</Note>
+
+## Set up the route
+
+<Steps>
+  <Step title="Add reviewers in the order they should see it">
+    Usually: the person who can actually answer, then whoever needs it for the record.
+  </Step>
+  <Step title="Keep it short">
+    Every reviewer is a day. Two reviewers who can decide beats five who can comment.
+  </Step>
+  <Step title="Reorder before you send, not after">
+    Rearranging mid-review is where things get confusing.
+  </Step>
+</Steps>
+
+## Locked reviewers
+
+<Warning>
+Once somebody has responded, you cannot remove or change them. Their response is evidence. This is deliberate — it's what makes the review history worth anything in a dispute.
+</Warning>
+
+## Changing the reviewer who holds the ball
+
+<Warning>
+If you change the reviewer **currently holding** the item, it comes back to you. That's not a bug — the item can't be in someone's court and reassigned at the same time, so it lands back with you to re-send.
+
+Expect this and plan for it: swapping the current reviewer costs you a round trip.
+</Warning>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Answering an RFI" icon="reply" href="/approvals/answer-an-rfi">
+    Responses vs. History.
+  </Card>
+  <Card title="Statuses and Ball in Court" icon="hand" href="/approvals/statuses-and-ball-in-court">
+    The model behind all of this.
+  </Card>
+</CardGroup>

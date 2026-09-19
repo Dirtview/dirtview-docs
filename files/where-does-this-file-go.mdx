@@ -1,0 +1,69 @@
+---
+title: "Where does this file go?"
+description: "Sheets go to Drawings. The spec book goes to Specifications. Everything else goes to Documents & Media."
+icon: "folder-tree"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="70.1" />
+
+<Note>
+**The rule, and you only need this one.**
+
+- A **drawing sheet** → Drawings
+- The **spec book** → Specifications
+- **Everything else** → Documents & Media
+</Note>
+
+This is the most-asked question in DirtView. The rule above answers it every time.
+
+## Why it matters
+
+The three places aren't just folders — they behave differently:
+
+<CardGroup cols={3}>
+  <Card title="Drawings" icon="ruler-combined">
+    Splits a PDF into sheets, indexes sheet numbers, supports markup, tracks revisions.
+
+    Put a spec book here and none of that works.
+  </Card>
+  <Card title="Specifications" icon="book">
+    Indexes sections, feeds submittals, answers questions.
+
+    Put a drawing here and you get nothing useful.
+  </Card>
+  <Card title="Documents & Media" icon="folder-open">
+    General storage: photos, contracts, permits, delivery tickets, closeout.
+
+    No special behaviour, and that's fine — most files don't need any.
+  </Card>
+</CardGroup>
+
+## The edge cases people ask about
+
+<AccordionGroup>
+  <Accordion title="A shop drawing from a supplier">
+    That belongs to a submittal — attach it to the submittal. → [Creating a submittal](/approvals/create-a-submittal)
+  </Accordion>
+  <Accordion title="A sketch the architect sent answering an RFI">
+    Attach it to the RFI response, where the question is. Copying it to Documents & Media as well is fine, but the RFI is the record.
+  </Accordion>
+  <Accordion title="Photos of a condition for a T&M ticket">
+    On the ticket. → [The six-step ticket](/tm-tickets/create-a-ticket)
+  </Accordion>
+  <Accordion title="A one-page addendum sheet">
+    If it's a drawing sheet, Drawings. If it's spec text, it goes with the spec book. If you're not sure, ask: do I want to mark it up and revision it, or search it by section?
+  </Accordion>
+</AccordionGroup>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Folders and counters" icon="folder" href="/files/folders-and-filters">
+    Why photo count and file count differ.
+  </Card>
+  <Card title="Distribution Groups" icon="users" href="/files/distribution-groups">
+    A group is not the project team.
+  </Card>
+</CardGroup>

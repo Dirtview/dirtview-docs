@@ -1,0 +1,63 @@
+---
+title: "Statuses and Ball in Court"
+description: "Status is a stage. Ball in Court is a person. They move independently and you need both."
+icon: "hand"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="50.2" />
+
+<Warning>
+**The single most confused thing in DirtView.** Status and Ball in Court are not the same field and do not move together.
+</Warning>
+
+## Two questions, two answers
+
+<CardGroup cols={2}>
+  <Card title="Status — where is this document?" icon="signal">
+    **Open** · **In Review** · **Answered** · **Closed**
+
+    A stage in the document's life. It belongs to the document.
+  </Card>
+  <Card title="Ball in Court — who has to act?" icon="hand">
+    A **person's name**.
+
+    The one human the whole thing is waiting on right now.
+  </Card>
+</CardGroup>
+
+## How they move apart
+
+An RFI can sit at **In Review** for eight days while the ball moves from the architect, to the structural engineer, and back to the architect. The status never changed. Three different people were on the hook.
+
+That's why:
+
+- **"What's the status?"** tells you how far along it is.
+- **"Who's got the ball?"** tells you who to call this morning.
+
+<Tip>
+In a coordination meeting, read the ball in court column, not the status column. Status tells you nothing about who's late.
+</Tip>
+
+## The statuses
+
+| Status | What it means | What you do |
+| --- | --- | --- |
+| Open | Submitted, not picked up yet | Watch the ball in court |
+| In Review | Somebody is working on it | Chase whoever holds the ball |
+| Answered | You have an answer | Read it, and act or push back |
+| Closed | Done, on the record | Nothing — it's evidence now |
+
+{/* TODO: confirm this is the exact status set for RFIs, and note any differences for Submittals and Change Orders. Submittals additionally use Outstanding / Approved / Rejected — see /approvals/submittal-review. */}
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Review Routing" icon="route" href="/approvals/review-routing">
+    How the ball actually moves, and who's locked.
+  </Card>
+  <Card title="Submittal review" icon="clipboard-check" href="/approvals/submittal-review">
+    Outstanding is not the same as In Review.
+  </Card>
+</CardGroup>

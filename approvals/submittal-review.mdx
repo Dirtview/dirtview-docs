@@ -1,0 +1,45 @@
+---
+title: "Submittal review: In Review, Outstanding, Approved, Rejected"
+description: "Outstanding is not the same as In Review. What turns a submittal Overdue, and who sees the flag."
+icon: "magnifying-glass"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="50.6" />
+
+<Warning>
+**In Review and Outstanding are not the same thing.** In Review means somebody has it and is working on it. Outstanding means it's still owed — nobody has it yet.
+</Warning>
+
+## The four states
+
+| State | Meaning | Who's holding it |
+| --- | --- | --- |
+| Outstanding | Still owed. Not sent, or sent and not picked up. | You, usually |
+| In Review | A reviewer has it and is working on it | The reviewer |
+| Approved | Cleared. You can build or order to it. | Nobody |
+| Rejected | Not cleared. Fix it and resubmit as a new revision. | You |
+
+{/* TODO: confirm whether there is a "revise and resubmit" / "approved as noted" state distinct from Rejected. Most construction workflows have one, and if DirtView does, it belongs in this table. */}
+
+## Overdue
+
+A submittal goes Overdue when the review time runs out.
+
+{/* TODO: confirm what sets the due date (a project-level review period? a per-submittal date?) and exactly who sees the Overdue flag — the reviewer, the submitter, the PM, all three. The curriculum calls out "who sees the flag" as a specific confusion. */}
+
+<Tip>
+Outstanding submittals are the quietest way a job falls behind. Nothing is late yet, nobody's been notified, and material isn't ordered. Read the Outstanding list weekly.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Change Orders" icon="money-bill-trend-up" href="/approvals/change-orders">
+    Cost and schedule impact.
+  </Card>
+  <Card title="Ball in Court" icon="hand" href="/approvals/statuses-and-ball-in-court">
+    Who do I actually call?
+  </Card>
+</CardGroup>

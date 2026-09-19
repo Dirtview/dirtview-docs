@@ -1,0 +1,84 @@
+---
+title: "Building a template: the full field palette"
+description: "All twenty field types and what each one is for — including when to use Quantity instead of Number."
+icon: "sliders"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="40.3" />
+
+<Note>
+**The short version.** Twenty field types. Pick the most specific one that fits — a specific field type gives you data you can add up later, where a text box gives you a paragraph nobody can total.
+</Note>
+
+<Tip>
+This is desk work. Build templates on a computer, not in a truck.
+</Tip>
+
+## The twenty field types
+
+| Field | Use it for |
+| --- | --- |
+| Text | Names, notes, anything written |
+| Number | A plain count with no unit |
+| Quantity | An amount **with a unit** — 12 CY, 400 LF |
+| Attachment | Photos, delivery tickets, PDFs |
+| Date | A single date |
+| Date range | From and to |
+| Signature | A signature captured on the device |
+| Location | Where on the job |
+| Weather | Conditions, for daily logs |
+| Choices | Pick one from a set you define |
+| Checkbox | A single yes/no that stays unchecked by default |
+| Toggle | An on/off switch |
+| Dropdown | Pick one from a long list |
+| Project members | Pick people already on this job |
+| Equipment | What was on site |
+| Labor table | Rows of crew, trade and hours |
+| Items table | Rows of materials or line items |
+| Rating | A score on a scale |
+| Drawing markup | Point at the sheet from inside the form |
+| Section header | Breaks a long form into parts — not an input |
+| Instructional text | On-form guidance — not an input |
+
+{/* TODO: verify this list and the exact in-product names against dev.dirtview.com. The curriculum lists twenty components; the two non-input types above are included in that count. */}
+
+## Quantity, not Number
+
+<Warning>
+This is the one that bites. **Number** stores `12`. **Quantity** stores `12 CY`. Six months later, when you're totalling concrete across 40 daily logs, a column of bare numbers is useless because nobody knows which ones were yards and which were loads. Use Quantity whenever there's a unit.
+</Warning>
+
+## Build it in a sensible order
+
+<Steps>
+  <Step title="Write down what the form is for">
+    One purpose per form. "Daily log" and "safety inspection" are two forms, not one.
+  </Step>
+  <Step title="Lay out the sections first">
+    Use section headers to block it out before you add fields. A wall of thirty fields doesn't get filled in properly.
+  </Step>
+  <Step title="Add fields, most specific type first">
+    Reach for Text last, not first.
+  </Step>
+  <Step title="Set per-field permissions">
+    Who has to fill it in, who can see it, who can change it.
+
+    → [Field settings](/forms/field-settings)
+  </Step>
+  <Step title="Test it on a phone before you publish">
+    Fill it out yourself, outside, with gloves on if that's the job. Then publish.
+  </Step>
+</Steps>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Field settings" icon="lock" href="/forms/field-settings">
+    Keep labor rates off the foreman's copy.
+  </Card>
+  <Card title="Scope and versions" icon="code-branch" href="/forms/scope-and-versions">
+    Global vs. This Project, Draft vs. Published.
+  </Card>
+</CardGroup>

@@ -1,0 +1,62 @@
+---
+title: "How DirtView is organized"
+description: "Two levels: your company, and each job. Knowing which one you are looking at answers most questions."
+icon: "sitemap"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="00.1" />
+
+<Note>
+**The short version.** The menu down the left side is your **whole company**. Everything inside a project belongs to **that one job**.
+</Note>
+
+## Two levels, and that's it
+
+DirtView has exactly two levels. Almost every "where is that?" question is really a question about which level you're on.
+
+<CardGroup cols={2}>
+  <Card title="Company level" icon="building">
+    The left-hand menu. Your people, their roles, your list of jobs. Set up once, used by every job.
+
+    Employees · External Contacts · Roles · Projects · Settings
+  </Card>
+  <Card title="Project level" icon="helmet-safety">
+    The tiles you see after you open a job. These only exist inside that job.
+
+    Drawings · Specifications · RFIs · Submittals · Change Orders · Forms · T&M Tickets · Documents & Media
+  </Card>
+</CardGroup>
+
+## Why this matters on your first day
+
+<AccordionGroup>
+  <Accordion title="I added someone to the company but they can't see the job">
+    Correct — and that's on purpose. Adding a person at the company level creates their login. It does not put them on any job. You add them to each job separately.
+
+    → [Putting people on a project](/projects/add-people-to-a-project)
+  </Accordion>
+  <Accordion title="I'm looking for drawings in the left menu and they're not there">
+    Drawings live inside a job, because every job has a different set. Open the project first, then pick the **Drawings** tile.
+  </Accordion>
+  <Accordion title="The numbers on my Dashboard don't match this job">
+    The Dashboard counts everything across your company, not the job you last had open.
+
+    → [Reading your Dashboard](/orientation/your-dashboard)
+  </Accordion>
+</AccordionGroup>
+
+{/* SCREENSHOT: a single annotated image showing the left menu (company) and the module grid (project) side by side. This is the most valuable screenshot in the whole site. */}
+{/* <Frame caption="Left menu = company. Module tiles = one job.">![Company level and project level](/images/orientation-two-levels.png)</Frame> */}
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Sign in and set your language" icon="right-to-bracket" href="/orientation/signing-in-and-language">
+    Get in, and switch to Spanish if you want.
+  </Card>
+  <Card title="Read your Dashboard" icon="gauge-high" href="/orientation/your-dashboard">
+    What every number on the home screen is counting.
+  </Card>
+</CardGroup>

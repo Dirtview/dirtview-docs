@@ -1,0 +1,222 @@
+{/*
+  ============================================================================
+  DIRTVIEW TUTORIAL VIDEO REGISTRY  —  the only file you edit to publish a video
+  ============================================================================
+
+  This is the single source of truth for all 48 DirtView University videos.
+
+  TO PUBLISH A VIDEO:
+    Find its ID below and paste the share link into `url`. That's it.
+    Every page that uses that ID switches from a grey placeholder to a real
+    player automatically. No page edits, no rebuild steps.
+
+  SUPPORTED LINKS (paste the normal share URL, not the embed code):
+    Loom     https://www.loom.com/share/abc123...
+    YouTube  https://www.youtube.com/watch?v=abc123   or   https://youtu.be/abc123
+    Vimeo    https://vimeo.com/123456789
+    Other    any direct embed URL is used as-is
+
+  TRACKS:
+    "Core"     — part of the shareable one-hour onboarding run (27 videos)
+    "Extended" — on-demand reference for admins and back office (21 videos)
+
+  Runtimes are the targets from the curriculum, not measurements. Update them
+  to the real length once a video is cut.
+*/}
+
+export const VIDEOS = {
+  // 00 — Orientation
+  "00.1": { series: "00", title: "How DirtView is organized", runtime: "2:00", track: "Core", url: "" },
+  "00.2": { series: "00", title: "Signing in, your profile, and working in Spanish", runtime: "1:30", track: "Extended", url: "" },
+  "00.3": { series: "00", title: "Reading your Dashboard", runtime: "2:30", track: "Core", url: "" },
+  "00.4": { series: "00", title: "Phone vs. desktop: what to do where", runtime: "2:00", track: "Extended", url: "" },
+
+  // 10 — Projects
+  "10.1": { series: "10", title: "The Projects list: search, status filters, grid vs. list", runtime: "1:30", track: "Core", url: "" },
+  "10.2": { series: "10", title: "Creating a project", runtime: "2:30", track: "Core", url: "" },
+  "10.3": { series: "10", title: "The Project Dashboard and the module tiles", runtime: "2:30", track: "Core", url: "" },
+  "10.4": { series: "10", title: "Putting people on a project", runtime: "2:00", track: "Core", url: "" },
+
+  // 20 — Drawings
+  "20.1": { series: "20", title: "Uploading a plan set and how it splits into sheets", runtime: "2:00", track: "Core", url: "" },
+  "20.2": { series: "20", title: "Finding a sheet fast", runtime: "1:30", track: "Extended", url: "" },
+  "20.3": { series: "20", title: "The sheet viewer: pan, zoom, page through the set", runtime: "2:00", track: "Core", url: "" },
+  "20.4": { series: "20", title: "Marking up a sheet: pen, highlighter, box, measure", runtime: "2:30", track: "Core", url: "" },
+  "20.5": { series: "20", title: "Revisions: drawing date vs. revision date", runtime: "2:00", track: "Extended", url: "" },
+
+  // 30 — Specifications
+  "30.1": { series: "30", title: "Uploading a spec book: Uploaded vs. Published", runtime: "2:00", track: "Core", url: "" },
+  "30.2": { series: "30", title: "Spec sections and how they attach to submittals", runtime: "2:00", track: "Core", url: "" },
+  "30.3": { series: "30", title: "Asking a question against the specs", runtime: "2:00", track: "Extended", url: "" },
+
+  // 40 — Forms
+  "40.1": { series: "40", title: "Submissions vs. Templates", runtime: "1:30", track: "Core", url: "" },
+  "40.2": { series: "40", title: "Filling out and submitting a form", runtime: "2:30", track: "Core", url: "" },
+  "40.3": { series: "40", title: "Building a template: the full field palette", runtime: "3:00", track: "Core", url: "" },
+  "40.4": { series: "40", title: "Field settings: Required, Visible To, Edited By", runtime: "2:00", track: "Extended", url: "" },
+  "40.5": { series: "40", title: "Scope and versions: Global vs. This Project, Draft vs. Published", runtime: "2:00", track: "Core", url: "" },
+  "40.6": { series: "40", title: "The built-in forms: Daily Field Log and Transmittal", runtime: "2:00", track: "Extended", url: "" },
+
+  // 50 — The approval loops
+  "50.1": { series: "50", title: "Writing an RFI that gets answered", runtime: "2:30", track: "Core", url: "" },
+  "50.2": { series: "50", title: "Statuses and Ball in Court", runtime: "2:00", track: "Core", url: "" },
+  "50.3": { series: "50", title: "Review Routing: adding, reordering, locked reviewers", runtime: "2:00", track: "Core", url: "" },
+  "50.4": { series: "50", title: "Answering an RFI, and reading the History tab", runtime: "1:30", track: "Extended", url: "" },
+  "50.5": { series: "50", title: "Creating a submittal: number, version, revision", runtime: "2:30", track: "Core", url: "" },
+  "50.6": { series: "50", title: "Submittal review: In Review, Outstanding, Approved, Rejected", runtime: "2:00", track: "Core", url: "" },
+  "50.7": { series: "50", title: "Change Orders: cost impact and schedule impact", runtime: "2:00", track: "Core", url: "" },
+
+  // 60 — T&M tickets
+  "60.1": { series: "60", title: "The six-step ticket, start to finish", runtime: "2:30", track: "Core", url: "" },
+  "60.2": { series: "60", title: "Cost Code vs. PCO Number", runtime: "2:00", track: "Extended", url: "" },
+  "60.3": { series: "60", title: "Getting a signature before you leave the site", runtime: "1:30", track: "Extended", url: "" },
+  "60.4": { series: "60", title: "Approving tickets and tracking impact cost", runtime: "1:30", track: "Extended", url: "" },
+
+  // 70 — Files & communication
+  "70.1": { series: "70", title: "Where does this file go?", runtime: "2:30", track: "Core", url: "" },
+  "70.2": { series: "70", title: "Folders, type filters, and the file counters", runtime: "1:30", track: "Extended", url: "" },
+  "70.3": { series: "70", title: "Distribution Groups", runtime: "2:00", track: "Extended", url: "" },
+  "70.4": { series: "70", title: "Send Mail and Notification History", runtime: "1:30", track: "Extended", url: "" },
+
+  // 80 — People & permissions
+  "80.1": { series: "80", title: "Employees vs. External Contacts", runtime: "2:00", track: "Core", url: "" },
+  "80.2": { series: "80", title: "Adding an employee: Pending Invite, Active, Inactive", runtime: "2:00", track: "Extended", url: "" },
+  "80.3": { series: "80", title: "Certifications and expiry tracking", runtime: "2:30", track: "Extended", url: "" },
+  "80.4": { series: "80", title: "The six built-in roles and what each one can do", runtime: "2:30", track: "Core", url: "" },
+  "80.5": { series: "80", title: "Custom roles and the Permission Matrix", runtime: "2:00", track: "Extended", url: "" },
+
+  // 90 — AI, voice & Procore
+  "90.1": { series: "90", title: "Talking an RFI into existence", runtime: "2:30", track: "Core", url: "" },
+  "90.2": { series: "90", title: "Voice on submittals and forms", runtime: "2:00", track: "Extended", url: "" },
+  "90.3": { series: "90", title: "Drawings AI Scan", runtime: "2:00", track: "Extended", url: "" },
+  "90.4": { series: "90", title: "Submittal Extract and Certifications Extract", runtime: "2:00", track: "Extended", url: "" },
+  "90.5": { series: "90", title: "Connecting Procore and queueing projects", runtime: "2:30", track: "Core", url: "" },
+  "90.6": { series: "90", title: "Reading AI & Services Usage", runtime: "1:30", track: "Extended", url: "" },
+};
+
+{/* Trims a URL at the first of any of the given characters. */}
+export const trimAt = (value, stops) => {
+  let out = value;
+  for (const stop of stops) {
+    const at = out.indexOf(stop);
+    if (at !== -1) out = out.slice(0, at);
+  }
+  return out;
+};
+
+{/* Turns a normal share link into an embeddable one. */}
+export const toEmbedUrl = (url) => {
+  if (!url) return "";
+  if (url.includes("loom.com/share/")) {
+    return trimAt(url, ["?", "#"]).replace("/share/", "/embed/");
+  }
+  if (url.includes("youtu.be/")) {
+    return "https://www.youtube.com/embed/" + trimAt(url.split("youtu.be/")[1], ["?", "&", "#", "/"]);
+  }
+  if (url.includes("watch?v=")) {
+    return "https://www.youtube.com/embed/" + trimAt(url.split("watch?v=")[1], ["&", "#"]);
+  }
+  if (url.includes("vimeo.com/") && !url.includes("player.vimeo.com")) {
+    return "https://player.vimeo.com/video/" + trimAt(url.split("vimeo.com/")[1], ["?", "&", "#", "/"]);
+  }
+  return url;
+};
+
+{/*
+  <Video id="50.1" />
+
+  Renders the player once a URL is set in VIDEOS, and a labelled placeholder
+  until then. Optional props override the registry: title, runtime, url.
+*/}
+export const Video = ({ id, title, runtime, url }) => {
+  const meta = VIDEOS[id] || {};
+  const label = title || meta.title || "Tutorial video";
+  const length = runtime || meta.runtime || "";
+  const track = meta.track || "";
+  const src = toEmbedUrl(url || meta.url);
+
+  const frame = {
+    position: "relative",
+    width: "100%",
+    paddingTop: "56.25%",
+    borderRadius: "10px",
+    overflow: "hidden",
+    background: "rgba(127,127,127,0.09)",
+    border: src ? "1px solid rgba(127,127,127,0.24)" : "1px dashed rgba(127,127,127,0.42)",
+  };
+
+  const fill = {
+    position: "absolute",
+    inset: 0,
+    width: "100%",
+    height: "100%",
+    border: 0,
+  };
+
+  const center = {
+    position: "absolute",
+    inset: 0,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "10px",
+    padding: "24px",
+    textAlign: "center",
+  };
+
+  const idBadge = {
+    fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace",
+    fontSize: "12px",
+    letterSpacing: "0.06em",
+    padding: "2px 8px",
+    borderRadius: "4px",
+    background: "rgba(184,82,40,0.14)",
+    color: "#B85228",
+    fontWeight: 600,
+  };
+
+  const caption = {
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "center",
+    gap: "8px",
+    marginTop: "8px",
+    fontSize: "13px",
+    opacity: 0.66,
+    fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace",
+  };
+
+  return (
+    <div style={{ margin: "0 0 28px" }}>
+      <div style={frame}>
+        {src ? (
+          <iframe
+            style={fill}
+            src={src}
+            title={label}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        ) : (
+          <div style={center}>
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="22" r="20" stroke="currentColor" strokeOpacity="0.28" strokeWidth="2" />
+              <path d="M18 15.5L29 22L18 28.5V15.5Z" fill="currentColor" fillOpacity="0.32" />
+            </svg>
+            <div style={{ fontWeight: 600, fontSize: "15px", maxWidth: "36ch", lineHeight: 1.35 }}>{label}</div>
+            <div style={{ fontSize: "13px", opacity: 0.6 }}>
+              Video coming soon{length ? " · " + length : ""}
+            </div>
+          </div>
+        )}
+      </div>
+      <div style={caption}>
+        {id ? <span style={idBadge}>{id}</span> : null}
+        {length ? <span>{length}</span> : null}
+        {track ? <span>{track} track</span> : null}
+      </div>
+    </div>
+  );
+};

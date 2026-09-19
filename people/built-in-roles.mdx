@@ -1,0 +1,82 @@
+---
+title: "The six built-in roles"
+description: "Admin, Project Manager, Superintendent, Safety Manager, Foreman and Viewer — who to assign to whom, in one pass."
+icon: "shield-halved"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="80.4" />
+
+<Note>
+**For admins.** Six roles ship with DirtView. Most companies never need more than these.
+</Note>
+
+## The six
+
+<CardGroup cols={2}>
+  <Card title="Admin" icon="crown">
+    Runs DirtView for your company: people, roles, settings, integrations.
+
+    **Give it to:** the one or two people who own the system. Not everyone senior.
+  </Card>
+  <Card title="Project Manager" icon="user-tie">
+    Runs jobs: RFIs, submittals, change orders, approvals.
+
+    **Give it to:** your PMs and project engineers.
+  </Card>
+  <Card title="Superintendent" icon="helmet-safety">
+    Runs the field: drawings, daily logs, tickets, coordination.
+
+    **Give it to:** supers and general foremen.
+  </Card>
+  <Card title="Safety Manager" icon="kit-medical">
+    Safety forms, inspections, certifications and compliance.
+
+    **Give it to:** whoever owns safety, even part-time.
+  </Card>
+  <Card title="Foreman" icon="hard-hat">
+    Day-to-day field work: fill out forms, write tickets, look at sheets.
+
+    **Give it to:** working foremen and leads.
+  </Card>
+  <Card title="Viewer" icon="eye">
+    Read-only. Sees, changes nothing.
+
+    **Give it to:** anyone who needs visibility without responsibility — an owner's rep, your CFO.
+  </Card>
+</CardGroup>
+
+{/* TODO: replace the descriptions above with the actual permission sets from the product's Permission Matrix. What's written here is who each role is *for*; the video and this page should also say what each one can and cannot do, module by module. */}
+
+## Assigning them without overthinking it
+
+<Steps>
+  <Step title="Start at the lowest role that does the job">
+    It's easy to raise someone later. Pulling a permission back after they've had it is a conversation.
+  </Step>
+  <Step title="Keep Admin to two people">
+    One is a single point of failure. Four is nobody owning it.
+  </Step>
+  <Step title="Use Viewer generously">
+    Most "can you send me a copy" requests are a Viewer seat.
+  </Step>
+  <Step title="Remember: role is the ceiling, job membership is the door">
+    A PM who isn't on the job still can't see it. → [Putting people on a project](/projects/add-people-to-a-project)
+  </Step>
+</Steps>
+
+<Note>
+The built-in roles are **editable**, and you can build your own starting from one of them. → [Custom roles and the Permission Matrix](/people/custom-roles)
+</Note>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Custom roles" icon="table-list" href="/people/custom-roles">
+    Read the matrix before you save.
+  </Card>
+  <Card title="Field-level permissions" icon="lock" href="/forms/field-settings">
+    Hide a rate column from one role.
+  </Card>
+</CardGroup>

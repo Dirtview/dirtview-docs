@@ -1,0 +1,51 @@
+---
+title: "The Project Dashboard and the module tiles"
+description: "What each tile counter is counting, and how to correct Project Info after the job is already running."
+icon: "table-cells-large"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="10.3" />
+
+<Note>
+**The short version.** Each tile is a module, and the small print under it is a live count of what's inside. The counts are for this job only.
+</Note>
+
+## Reading the tile counters
+
+The counters are worth understanding, because they're not all counting the same kind of thing:
+
+| Tile shows | It means |
+| --- | --- |
+| `0 folders / 25 sheets` | Folders are optional; sheets are not. You have 25 sheets and haven't grouped them. |
+| `1 submitted / 1 draft` | One finished record, and one somebody started and left. Drafts are invisible to everyone else. |
+
+<Warning>
+A draft is not submitted. Nobody is notified, nobody is waiting on it, and it will sit there until the person who started it finishes it. When something "never came through," check for a draft first.
+</Warning>
+
+{/* TODO: list every module tile and exactly what its counter counts. This table is the most-read thing on the page — fill it in from dev.dirtview.com rather than guessing. */}
+
+## Fixing Project Info after the fact
+
+Got the owner wrong, or the address? Open **Project Info** from the project and edit it. It applies going forward.
+
+{/* TODO: confirm which fields can be changed after creation, which are locked, and whether changes restamp existing records. */}
+
+## Coming soon on this screen
+
+<Info>
+Two areas of the Project Dashboard are still in development and show a **Coming soon** overlay: **Project Schedule** (the milestone strip under the tiles) and **Recent Activity** (the feed on the sidebar). They're not documented here yet on purpose — this page gets updated the day they ship.
+</Info>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Add your crew" icon="user-plus" href="/projects/add-people-to-a-project">
+    Who can do what on this job.
+  </Card>
+  <Card title="Where files go" icon="folder-tree" href="/files/where-does-this-file-go">
+    The most-asked question in the product.
+  </Card>
+</CardGroup>

@@ -1,0 +1,48 @@
+---
+title: "Field settings: Required, Visible To, Edited By"
+description: "Per-field permissions are how you keep labor rates off the foreman's copy while the PM still sees them."
+icon: "lock"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="40.4" />
+
+<Note>
+**The short version.** Permissions are set per **field**, not just per form. One form can show different things to different roles.
+</Note>
+
+## The three settings
+
+<CardGroup cols={3}>
+  <Card title="Required" icon="asterisk">
+    The form can't be submitted without it. Use it sparingly — every required field is one more reason somebody leaves the form as a draft.
+  </Card>
+  <Card title="Visible To" icon="eye">
+    Which roles can **see** the field at all. Invisible fields aren't greyed out; they aren't there.
+  </Card>
+  <Card title="Edited By" icon="pen">
+    Which roles can **change** it. A field can be visible to everyone and editable by the PM only.
+  </Card>
+</CardGroup>
+
+## The case this exists for
+
+A T&M-style form with a labor table: the foreman fills in names, trades and hours. The billing rate column is visible and editable to the PM and the office, and invisible to the foreman. One form, one submission, one record — and nobody in the field is looking at rates.
+
+{/* TODO: confirm whether Visible To / Edited By target roles, individual people, or both. */}
+
+<Warning>
+Test it. Log in as — or sit with — someone in the restricted role and open the form before you rely on it. Assumed permissions are how rate sheets end up in the wrong hands.
+</Warning>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Scope and versions" icon="code-branch" href="/forms/scope-and-versions">
+    What changes when you edit a published template.
+  </Card>
+  <Card title="Roles" icon="shield-halved" href="/people/built-in-roles">
+    The six built-in roles these settings refer to.
+  </Card>
+</CardGroup>

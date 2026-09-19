@@ -1,0 +1,53 @@
+---
+title: "Creating a project"
+description: "Project number, contractor vs. owner, job site and project type — plus what Dig Alert and Apprentice Required actually do."
+icon: "square-plus"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="10.2" />
+
+<Note>
+**The short version.** Get the project number and the contractor/owner right at the start. Everything downstream — RFI numbers, submittal logs, notifications — hangs off them.
+</Note>
+
+## Fill it out
+
+<Steps>
+  <Step title="Project name and number">
+    Use the number your company already uses on paperwork. If the GC has their own number for the job, put yours here and keep theirs in the description — one number per field.
+  </Step>
+  <Step title="Contractor and owner">
+    Two different parties. The **contractor** is who's building it; the **owner** is who it belongs to when it's done. Getting these backwards shows up on every document you send out.
+  </Step>
+  <Step title="Job site">
+    The physical address. This is what drives location fields on forms and tickets, so it's worth getting right.
+  </Step>
+  <Step title="Project type">
+    {/* TODO: list the actual project type options and say what each one changes downstream, if anything. */}
+  </Step>
+  <Step title="Dig Alert and Apprentice Required">
+    Two flags with real-world consequences:
+
+    - **Dig Alert** — for jobs where you have to notify before you excavate.
+    - **Apprentice Required** — for jobs with apprenticeship requirements, typically public works.
+
+    {/* TODO: confirm who each flag notifies and when. The curriculum flags this as a known point of confusion, so the answer must be specific: which role gets the notification, and at what moment. */}
+  </Step>
+</Steps>
+
+<Tip>
+You can fix any of this later from **Project Info** — see [The Project Dashboard](/projects/project-dashboard). But the project number gets stamped on records as they're created, so change it early or not at all.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Add your crew" icon="user-plus" href="/projects/add-people-to-a-project">
+    Company membership is not job membership.
+  </Card>
+  <Card title="Upload the plans" icon="cloud-arrow-up" href="/drawings/upload-a-plan-set">
+    One PDF in, a full sheet index out.
+  </Card>
+</CardGroup>
