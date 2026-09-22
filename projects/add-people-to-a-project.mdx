@@ -1,0 +1,49 @@
+---
+title: "Putting people on a project"
+description: "Adding someone to your company does not put them on a job. Here's the difference between a company role and what they can do on this job."
+icon: "user-plus"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="10.4" />
+
+<Warning>
+**Read this first.** Adding a person to your company creates their login. It does **not** put them on any job. This is the single most common setup mistake in DirtView.
+</Warning>
+
+## The two steps people collapse into one
+
+<Steps>
+  <Step title="Add them to the company (once)">
+    Left menu → **Employees**. This creates their account and gives them a company role.
+
+    → [Adding an employee](/people/add-an-employee)
+  </Step>
+  <Step title="Add them to each job (every time)">
+    Open the job → project team → add the person. Until you do this, they sign in successfully and see nothing.
+
+    {/* TODO: confirm the exact path and label for adding a person to a project team. */}
+  </Step>
+</Steps>
+
+## Company role vs. what they can do here
+
+Their **company role** (Foreman, PM, Admin…) is the ceiling — the set of things that role is ever allowed to do. Being on this job is what lets them do those things *on this job*.
+
+<Tip>
+So: "Why can't José see the drawings?" is almost always step 2 missing, not a permissions problem. Check job membership before you start editing roles.
+</Tip>
+
+→ The six roles and what each one can do: [Built-in roles](/people/built-in-roles)
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="The six roles" icon="shield-halved" href="/people/built-in-roles">
+    Who to assign to whom, in one pass.
+  </Card>
+  <Card title="Employees vs. contacts" icon="address-book" href="/people/employees-vs-contacts">
+    Logins vs. a directory you route things to.
+  </Card>
+</CardGroup>

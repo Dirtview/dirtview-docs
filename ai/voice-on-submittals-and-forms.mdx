@@ -1,0 +1,42 @@
+---
+title: "Voice on submittals and forms"
+description: "Which forms accept voice, what it does with tables, and how to correct it without starting over."
+icon: "waveform-lines"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="90.2" />
+
+<Note>
+**The short version.** Voice works on more than RFIs. Tables are where it needs the most checking.
+</Note>
+
+## Where voice works
+
+{/* TODO: list exactly which modules and field types accept voice input. Users will try it everywhere and give up on the feature if they hit two dead ends first. */}
+
+## Tables need checking
+
+A labor table or an items table is rows and columns, and speech is a stream. It does a reasonable job of splitting "Mike, carpenter, eight hours; Luis, laborer, ten hours" into rows — but check every row before submitting, especially the numbers.
+
+<Warning>
+Hours and quantities are what get billed. Read the table back before you submit, every time.
+</Warning>
+
+## Fixing it without starting over
+
+You don't have to clear the whole thing and re-record. Tap into the field or row that's wrong and fix just that.
+
+{/* TODO: confirm the correction behaviour — can you re-dictate one field, edit by hand, or both? */}
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Drawings AI Scan" icon="robot" href="/ai/drawings-ai-scan">
+    What it reads, and what it won't catch.
+  </Card>
+  <Card title="Build a template" icon="sliders" href="/forms/build-a-template">
+    Which field types to use.
+  </Card>
+</CardGroup>

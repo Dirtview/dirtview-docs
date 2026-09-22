@@ -1,0 +1,57 @@
+---
+title: "Employees vs. External Contacts"
+description: "Employees log in and hold a role. External contacts are a directory you route things to. Picking the wrong one is the most common setup mistake."
+icon: "address-book"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="80.1" />
+
+<Warning>
+**The most common setup mistake in DirtView.** Get this one right and you'll avoid a week of confusion.
+</Warning>
+
+## The difference
+
+<CardGroup cols={2}>
+  <Card title="Employees" icon="user">
+    **People who log in.** They have an account, a role, and they do work in DirtView — write RFIs, fill forms, approve tickets.
+
+    Your own staff.
+  </Card>
+  <Card title="External Contacts" icon="address-book">
+    **People you send things to.** They're a shared directory. No login, no role.
+
+    The architect, the owner's rep, suppliers, the GC's PE.
+  </Card>
+</CardGroup>
+
+## How to decide, every time
+
+Ask one question: **does this person need to log in and do work in DirtView?**
+
+- Yes → Employee.
+- No, I just need to send them things and record that I did → External Contact.
+
+<Tip>
+When you're not sure, make them an External Contact. Upgrading later is easy; you're not paying for a seat they don't use, and you haven't given a login to somebody outside your company.
+</Tip>
+
+## What goes wrong
+
+| Mistake | What you see |
+| --- | --- |
+| Architect added as an Employee | A login nobody uses, a role that doesn't fit, and a seat spent |
+| Your own foreman added as a Contact | He can't sign in, and you spend a day on "permissions" that aren't the problem |
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Add an employee" icon="user-plus" href="/people/add-an-employee">
+    Pending Invite, Active, Inactive.
+  </Card>
+  <Card title="The six roles" icon="shield-halved" href="/people/built-in-roles">
+    Who to assign to whom.
+  </Card>
+</CardGroup>

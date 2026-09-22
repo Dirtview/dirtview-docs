@@ -1,0 +1,48 @@
+---
+title: "Certifications and expiry tracking"
+description: "Uploading a card, how expiry dates get read, and where the expired or expiring-soon warning shows up."
+icon: "id-card"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="80.3" />
+
+<Note>
+**The short version.** Upload a photo of the card. DirtView reads the expiry date and warns you before it lapses.
+</Note>
+
+## Upload a card
+
+<Steps>
+  <Step title="Open the employee">
+    Left menu → Employees → the person.
+  </Step>
+  <Step title="Add the certification and upload a photo of the card">
+    A clear, flat photo. The expiry date gets read off the card.
+
+    → How the extraction works: [Certifications Extract](/ai/extract-tools)
+  </Step>
+  <Step title="Check the date it read">
+    Always check. A misread expiry date is worse than no date, because you stop watching for it.
+  </Step>
+</Steps>
+
+## Expiring and expired
+
+{/* TODO: confirm the warning window (how many days before expiry?), where the warnings surface (Dashboard, the Employees list, an email?), and who receives them. This is a compliance feature — the answer needs to be exact, not approximate. */}
+
+<Warning>
+Until the notification behaviour above is confirmed, don't rely on DirtView to be the only thing watching an expiry that can put someone off the job. Keep your existing check as well.
+</Warning>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="The six roles" icon="shield-halved" href="/people/built-in-roles">
+    Who to assign to whom.
+  </Card>
+  <Card title="Custom roles" icon="table-list" href="/people/custom-roles">
+    Building your own.
+  </Card>
+</CardGroup>

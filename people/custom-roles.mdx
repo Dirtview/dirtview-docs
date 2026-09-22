@@ -1,0 +1,56 @@
+---
+title: "Custom roles and the Permission Matrix"
+description: "The built-in roles are editable. Start a custom role from one of them, and read the matrix before you save."
+icon: "table-list"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="80.5" />
+
+<Warning>
+**For admins only.** A permission change applies to everybody holding that role, on every job, immediately.
+</Warning>
+
+## Start from an existing role
+
+Never start from nothing. Pick the built-in role closest to what you want and adjust it — you inherit a sensible baseline instead of assembling one checkbox at a time.
+
+<Steps>
+  <Step title="Duplicate the closest built-in role">
+    Want a "Foreman who can also approve tickets"? Start from Foreman.
+
+    {/* TODO: confirm the exact action for creating a custom role from an existing one. */}
+  </Step>
+  <Step title="Name it for the job, not the person">
+    "Field Approver," not "Mike's role." Mike will move on.
+  </Step>
+  <Step title="Change only what you came to change">
+    Then stop. Every extra permission is one you'll have to justify later.
+  </Step>
+  <Step title="Read the matrix row by row before saving">
+    The matrix is a grid of what this role can do in each module. Read it, don't skim it.
+  </Step>
+  <Step title="Test with one person for a week">
+    Before you move thirty people onto it.
+  </Step>
+</Steps>
+
+## Reading the matrix
+
+{/* TODO: document the Permission Matrix properly: the axes (modules × actions?), what each action level means (view / create / edit / approve / delete?), and which permissions imply others. A matrix screenshot with the columns labelled is worth more than any paragraph here. */}
+
+<Tip>
+Editing a built-in role changes it for everyone already on it. If you want to experiment, duplicate first and leave the built-in alone.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Field-level permissions" icon="lock" href="/forms/field-settings">
+    Finer than roles, per form field.
+  </Card>
+  <Card title="AI and voice" icon="microphone" href="/ai/talk-an-rfi-into-existence">
+    Talking an RFI into existence.
+  </Card>
+</CardGroup>

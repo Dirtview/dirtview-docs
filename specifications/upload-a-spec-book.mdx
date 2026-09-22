@@ -1,0 +1,54 @@
+---
+title: "Uploading a spec book: Uploaded vs. Published"
+description: "Uploading starts the indexing. Publishing is what makes the book searchable and attachable. Nothing works until you publish."
+icon: "book"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="30.1" />
+
+<Warning>
+**This is the thing nobody guesses.** The Specifications screen shows two lists — **Uploaded** and **Published**. Uploading a spec book does almost nothing on its own. **Publishing** is what makes it searchable and available to attach to submittals.
+</Warning>
+
+## What each list means
+
+<CardGroup cols={2}>
+  <Card title="Uploaded" icon="cloud-arrow-up">
+    The file is in DirtView and is being read and indexed. It is not usable yet. Nobody can search it, and you can't attach its sections to anything.
+  </Card>
+  <Card title="Published" icon="circle-check">
+    The book is live. Sections are searchable, they can be attached to submittals, and Spec Ask can answer against them.
+  </Card>
+</CardGroup>
+
+## Do it in order
+
+<Steps>
+  <Step title="Upload the spec book PDF">
+    The whole book, one file.
+  </Step>
+  <Step title="Wait for indexing to finish">
+    It's reading the book and finding the sections.
+
+    {/* TODO: state realistic indexing time for a typical book and what the UI shows while it runs. */}
+  </Step>
+  <Step title="Review what it found">
+    Check that the section numbers look like your book before you publish.
+  </Step>
+  <Step title="Publish">
+    Now it's real. **Skip this step and everything downstream quietly doesn't work** — that's the support ticket.
+  </Step>
+</Steps>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Sections and submittals" icon="link" href="/specifications/spec-sections-and-submittals">
+    Where the 00 20 00 on a submittal comes from.
+  </Card>
+  <Card title="Ask the specs" icon="comments" href="/specifications/ask-the-specs">
+    Get an answer with the section it came from.
+  </Card>
+</CardGroup>

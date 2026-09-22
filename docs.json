@@ -1,72 +1,249 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "DirtView Help Center",
+  "description": "Simple, step-by-step guides for everyone on the job — in English and Spanish.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#B85228",
+    "light": "#E58254",
+    "dark": "#8F3F1E"
+  },
+  "appearance": {
+    "default": "system"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "/"
+  },
+  "search": {
+    "prompt": "How do I create an RFI?"
+  },
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "default": true,
+        "groups": [
+          {
+            "group": "Start here",
+            "icon": "flag",
+            "pages": [
+              "index",
+              "quickstart",
+              "video-library"
+            ]
+          },
+          {
+            "group": "00 · Orientation",
+            "icon": "sitemap",
+            "pages": [
+              "orientation/how-dirtview-is-organized",
+              "orientation/signing-in-and-language",
+              "orientation/your-dashboard",
+              "orientation/phone-vs-desktop"
+            ]
+          },
+          {
+            "group": "10 · Projects",
+            "icon": "helmet-safety",
+            "pages": [
+              "projects/projects-list",
+              "projects/create-a-project",
+              "projects/project-dashboard",
+              "projects/add-people-to-a-project"
+            ]
+          },
+          {
+            "group": "20 · Drawings",
+            "icon": "ruler-combined",
+            "pages": [
+              "drawings/upload-a-plan-set",
+              "drawings/find-a-sheet",
+              "drawings/sheet-viewer",
+              "drawings/markup-a-sheet",
+              "drawings/revisions"
+            ]
+          },
+          {
+            "group": "30 · Specifications",
+            "icon": "book",
+            "pages": [
+              "specifications/upload-a-spec-book",
+              "specifications/spec-sections-and-submittals",
+              "specifications/ask-the-specs"
+            ]
+          },
+          {
+            "group": "40 · Forms",
+            "icon": "file-lines",
+            "pages": [
+              "forms/submissions-vs-templates",
+              "forms/fill-out-a-form",
+              "forms/build-a-template",
+              "forms/field-settings",
+              "forms/scope-and-versions",
+              "forms/built-in-forms"
+            ]
+          },
+          {
+            "group": "50 · RFIs, submittals & change orders",
+            "icon": "route",
+            "pages": [
+              "approvals/overview",
+              "approvals/write-an-rfi",
+              "approvals/statuses-and-ball-in-court",
+              "approvals/review-routing",
+              "approvals/answer-an-rfi",
+              "approvals/create-a-submittal",
+              "approvals/submittal-review",
+              "approvals/change-orders"
+            ]
+          },
+          {
+            "group": "60 · T&M tickets",
+            "icon": "ticket",
+            "pages": [
+              "tm-tickets/create-a-ticket",
+              "tm-tickets/cost-code-vs-pco",
+              "tm-tickets/get-a-signature",
+              "tm-tickets/approve-tickets"
+            ]
+          },
+          {
+            "group": "70 · Files & communication",
+            "icon": "folder-tree",
+            "pages": [
+              "files/where-does-this-file-go",
+              "files/folders-and-filters",
+              "files/distribution-groups",
+              "files/send-mail-and-notifications"
+            ]
+          },
+          {
+            "group": "80 · People & permissions",
+            "icon": "shield-halved",
+            "pages": [
+              "people/employees-vs-contacts",
+              "people/add-an-employee",
+              "people/certifications",
+              "people/built-in-roles",
+              "people/custom-roles"
+            ]
+          },
+          {
+            "group": "90 · AI, voice & Procore",
+            "icon": "microphone",
+            "pages": [
+              "ai/talk-an-rfi-into-existence",
+              "ai/voice-on-submittals-and-forms",
+              "ai/drawings-ai-scan",
+              "ai/extract-tools",
+              "ai/procore-sync",
+              "ai/ai-usage"
+            ]
+          },
+          {
+            "group": "Help",
+            "icon": "life-ring",
+            "pages": [
+              "help/languages",
+              "help/glossary",
+              "help/support"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "es",
+        "groups": [
+          {
+            "group": "Empieza aquí",
+            "icon": "flag",
+            "pages": [
+              "es/index",
+              "es/quickstart"
+            ]
+          },
+          {
+            "group": "00 · Orientación",
+            "icon": "sitemap",
+            "pages": [
+              "es/orientation/how-dirtview-is-organized",
+              "es/orientation/signing-in-and-language",
+              "es/orientation/your-dashboard",
+              "es/orientation/phone-vs-desktop"
+            ]
+          },
+          {
+            "group": "Ayuda",
+            "icon": "life-ring",
+            "pages": [
+              "es/help/languages"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "navbar": {
     "links": [
       {
+        "label": "Video library",
+        "href": "https://docs.dirtview.com/video-library"
+      },
+      {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://docs.dirtview.com/help/support"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open DirtView",
+      "href": "https://dirtview.com"
     }
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "Guides",
+        "items": [
+          {
+            "label": "Getting started",
+            "href": "https://docs.dirtview.com/quickstart"
+          },
+          {
+            "label": "Video library",
+            "href": "https://docs.dirtview.com/video-library"
+          },
+          {
+            "label": "Glossary",
+            "href": "https://docs.dirtview.com/help/glossary"
+          }
+        ]
+      },
+      {
+        "header": "Ayuda",
+        "items": [
+          {
+            "label": "Guías en español",
+            "href": "https://docs.dirtview.com/es"
+          },
+          {
+            "label": "Trabajar en español",
+            "href": "https://docs.dirtview.com/es/help/languages"
+          }
+        ]
+      }
+    ]
   },
   "contextual": {
     "options": [
       "copy",
       "view",
-      "chatgpt",
       "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "chatgpt"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

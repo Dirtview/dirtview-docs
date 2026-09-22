@@ -1,0 +1,53 @@
+---
+title: "Uploading a plan set"
+description: "You upload the whole PDF once. DirtView splits it into sheets and reads the number and title off each sheet."
+icon: "cloud-arrow-up"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="20.1" />
+
+<Note>
+**The short version.** Upload the entire plan set as one PDF. DirtView splits it into individual sheets and reads the sheet number and title off the drawing itself. You don't upload sheets one at a time.
+</Note>
+
+## Upload it
+
+<Steps>
+  <Step title="Open Drawings inside the job">
+    Drawings belong to one project. Open the job first.
+  </Step>
+  <Step title="Upload the whole PDF">
+    The full set, in one file. Don't split it up first — that's the software's job.
+  </Step>
+  <Step title="Let it process, then check the index">
+    Each page becomes a sheet, with its number and title taken from the sheet. Scan the list and make sure the numbers look like your set.
+
+    {/* TODO: state the realistic processing time for a 200-sheet set and what the screen shows while it works. */}
+  </Step>
+  <Step title="Fix anything it misread">
+    Hand-drawn or stamped title blocks are the usual culprits.
+
+    {/* TODO: confirm how to correct a sheet number or title after upload. */}
+  </Step>
+</Steps>
+
+## Folders are optional, sheets are not
+
+Every page becomes a sheet whether you organize it or not. Folders are just a way to group sheets into discipline packages — architectural, structural, mechanical — so people can find things faster. A job with zero folders and 25 sheets is perfectly normal.
+
+<Tip>
+If your tile reads `0 folders / 25 sheets`, nothing is wrong. You just haven't grouped them.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Find a sheet fast" icon="magnifying-glass" href="/drawings/find-a-sheet">
+    What search actually matches.
+  </Card>
+  <Card title="Uploading a newer sheet" icon="clock-rotate-left" href="/drawings/revisions">
+    How revisions supersede instead of delete.
+  </Card>
+</CardGroup>

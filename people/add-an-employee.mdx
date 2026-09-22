@@ -1,0 +1,62 @@
+---
+title: "Adding an employee: Pending Invite, Active, Inactive"
+description: "What a pending invite can and can't do, and why you deactivate somebody instead of deleting them."
+icon: "user-plus"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="80.2" />
+
+<Note>
+**The short version.** Three states. And when somebody leaves, you **deactivate** — you don't delete.
+</Note>
+
+## The three states
+
+<CardGroup cols={3}>
+  <Card title="Pending Invite" icon="paper-plane">
+    Invited, hasn't set a password yet. The account exists but nobody can use it.
+  </Card>
+  <Card title="Active" icon="circle-check">
+    Signed in and working.
+  </Card>
+  <Card title="Inactive" icon="circle-minus">
+    Can't sign in. Everything they ever did is still on the record.
+  </Card>
+</CardGroup>
+
+## Add somebody
+
+<Steps>
+  <Step title="Left menu → Employees → add">
+    Name, email, company role.
+  </Step>
+  <Step title="Pick their role">
+    → [The six built-in roles](/people/built-in-roles)
+  </Step>
+  <Step title="Then put them on their jobs">
+    This is the step everybody misses. → [Putting people on a project](/projects/add-people-to-a-project)
+  </Step>
+</Steps>
+
+## Deactivate, never delete
+
+<Warning>
+When somebody leaves, set them **Inactive**. Their RFIs, their signed tickets and their form submissions are your project record — and on a claim, a record signed by a person who no longer exists in the system is a problem you don't want to explain.
+</Warning>
+
+Inactive does the one thing you actually need: they can't sign in any more.
+
+{/* TODO: confirm whether deletion is even possible, and what it does to their historical records. If it's possible, this page should say plainly what you lose. */}
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Certifications" icon="id-card" href="/people/certifications">
+    Expiry tracking and where warnings show up.
+  </Card>
+  <Card title="Custom roles" icon="table-list" href="/people/custom-roles">
+    The Permission Matrix.
+  </Card>
+</CardGroup>

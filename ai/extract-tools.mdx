@@ -1,0 +1,53 @@
+---
+title: "Submittal Extract and Certifications Extract"
+description: "Build the submittal register out of the spec book instead of by hand, and read expiry dates off a certification card."
+icon: "file-import"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="90.4" />
+
+<Note>
+**The short version.** Two extractors. One reads your spec book and proposes the submittal register. One reads a certification card and pulls out the expiry date.
+</Note>
+
+## Submittal Extract
+
+Building a submittal register by hand means somebody reads the whole spec book and types a few hundred rows. Submittal Extract reads the published book and proposes the register for you.
+
+<Steps>
+  <Step title="Publish the spec book first">
+    Nothing works against an unpublished book. → [Uploaded vs. Published](/specifications/upload-a-spec-book)
+  </Step>
+  <Step title="Run the extract">
+    It works through the sections and proposes submittal items.
+  </Step>
+  <Step title="Review what came back before you send anything">
+    This is the step. Check for sections it missed, items that don't apply to your scope, and duplicates.
+  </Step>
+  <Step title="Accept the register">
+    Now you have a register that covers the book instead of covering what people remembered.
+  </Step>
+</Steps>
+
+<Warning>
+A register you haven't read is not a register. Review it against your own scope of work — the spec book covers the whole project, and you're one trade.
+</Warning>
+
+## Certifications Extract
+
+Point it at a photo of a card and it pulls out the expiry date, so you're not typing dates off a phone photo.
+
+Always check the date it read. → [Certifications and expiry tracking](/people/certifications)
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Procore" icon="plug" href="/ai/procore-sync">
+    Queued, running, imported.
+  </Card>
+  <Card title="AI usage" icon="chart-line" href="/ai/ai-usage">
+    What those numbers are, and aren't.
+  </Card>
+</CardGroup>

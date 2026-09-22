@@ -1,0 +1,53 @@
+---
+title: "Scope and versions: Global vs. This Project"
+description: "Editing a published template saves a new version automatically. Global scope means every job you run."
+icon: "code-branch"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="40.5" />
+
+<Warning>
+**Global means every job.** A template saved with Global scope is your company's form, on every project, including the ones already running. Change it carelessly and you've changed the paperwork on all of them.
+</Warning>
+
+## Two scopes
+
+<CardGroup cols={2}>
+  <Card title="Global" icon="globe">
+    Your company's standard form. Use it for things that should be identical everywhere — your daily log, your safety inspection.
+  </Card>
+  <Card title="This Project" icon="helmet-safety">
+    Lives on one job only. Use it for an owner-specific form, or anything you're still trying out.
+  </Card>
+</CardGroup>
+
+<Tip>
+Build a new form as **This Project** first. Run it on one job for a couple of weeks. Promote it to Global once it's actually right.
+
+{/* TODO: confirm whether a This Project template can be promoted to Global, or has to be rebuilt. */}
+</Tip>
+
+## Draft vs. Published, and automatic versions
+
+- A **draft** template can't be filled out yet. Build in draft.
+- **Publishing** makes it available to fill out.
+- Editing a **published** template **automatically saves a new version**. You don't have to remember to version it, and you can't accidentally overwrite the version people already used.
+
+<Note>
+Submissions stay attached to the version of the template they were filled out on. That's why last month's logs still show last month's fields.
+</Note>
+
+{/* TODO: confirm where version history is visible and whether you can roll back to an earlier version. */}
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="The built-in forms" icon="file-lines" href="/forms/built-in-forms">
+    Copy one into your own house version.
+  </Card>
+  <Card title="The approval loops" icon="route" href="/approvals/overview">
+    Status vs. ball in court — learn it once, use it three times.
+  </Card>
+</CardGroup>

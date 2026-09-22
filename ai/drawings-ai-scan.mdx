@@ -1,0 +1,52 @@
+---
+title: "Drawings AI Scan"
+description: "What the scan reads off a sheet, what it writes back, and what it will not catch."
+icon: "robot"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="90.3" />
+
+<Note>
+**The short version.** The scan reads a sheet and writes what it finds back onto the sheet record. It is a head start, not a review.
+</Note>
+
+## What it does
+
+{/* TODO: state precisely what AI Scan reads (title block? sheet number and title? callouts? revision clouds?) and what it writes back onto the record. Then this page can be specific instead of careful. */}
+
+## What it will not catch
+
+<Warning>
+Be blunt about this with your crews:
+
+- Hand annotations and field sketches on a scanned sheet
+- Anything illegible, skewed or photographed at an angle
+- A conflict between two sheets — that's a human judgement, and it's an [RFI](/approvals/write-an-rfi)
+</Warning>
+
+## Use it like this
+
+<Steps>
+  <Step title="Run the scan after uploading a set">
+    → [Uploading a plan set](/drawings/upload-a-plan-set)
+  </Step>
+  <Step title="Spot-check the results against the sheets">
+    Pick five sheets, including the worst-quality one in the set.
+  </Step>
+  <Step title="Fix what it got wrong before anybody builds off it">
+    A wrong sheet number in the index sends somebody to the wrong detail.
+  </Step>
+</Steps>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Extract tools" icon="file-import" href="/ai/extract-tools">
+    Submittal and certification extraction.
+  </Card>
+  <Card title="Procore" icon="plug" href="/ai/procore-sync">
+    Connecting and queueing projects.
+  </Card>
+</CardGroup>

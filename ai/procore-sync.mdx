@@ -1,0 +1,68 @@
+---
+title: "Connecting Procore and queueing projects"
+description: "Queued vs. running vs. imported, why imported projects show as read-only, and what Cancel Queue does."
+icon: "plug"
+---
+
+import { Video } from '/snippets/video.mdx';
+
+<Video id="90.5" />
+
+<Note>
+**The short version.** You connect Procore once, then queue the projects you want. Imported projects come in **read-only**.
+</Note>
+
+## The three states
+
+<CardGroup cols={3}>
+  <Card title="Queued" icon="clock">
+    Waiting its turn. Nothing has been imported yet.
+  </Card>
+  <Card title="Running" icon="spinner">
+    Importing now. Leave it alone.
+  </Card>
+  <Card title="Imported" icon="circle-check">
+    Done. It shows as checked, and it's read-only.
+  </Card>
+</CardGroup>
+
+## Why imported projects are read-only
+
+Because Procore is still the system of record for them. Read-only means you can see the data without two systems disagreeing about who owns it.
+
+{/* TODO: confirm exactly what read-only covers — the whole project, or specific modules? Can you add new DirtView records (a T&M ticket, a form) to an imported project? This is the first question every user asks. */}
+
+## Cancel Queue
+
+Removes what's still waiting. It doesn't undo what's already imported.
+
+{/* TODO: confirm whether Cancel Queue stops a currently running import or only clears the pending ones, and what happens to a half-imported project. */}
+
+## Connect it
+
+<Steps>
+  <Step title="Connect your Procore account">
+    An Admin does this once, at the company level.
+  </Step>
+  <Step title="Pick the projects you want">
+    Start with one. Import it, look at what came across, then queue the rest.
+  </Step>
+  <Step title="Queue them and let it run">
+    Large projects take a while.
+  </Step>
+</Steps>
+
+<Tip>
+Don't queue forty projects on your first try. Import one, check it against Procore, then do the rest.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="AI usage" icon="chart-line" href="/ai/ai-usage">
+    Reading the usage screen.
+  </Card>
+  <Card title="Get help" icon="life-ring" href="/help/support">
+    When something's actually wrong.
+  </Card>
+</CardGroup>
