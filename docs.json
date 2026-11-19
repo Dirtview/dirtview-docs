@@ -29,14 +29,15 @@
   },
   "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
     "href": "https://docs.dirtview.com"
   },
   "seo": {
     "metatags": {
       "og:site_name": "DirtView Help Center",
-      "og:image": "https://docs.dirtview.com/og-image.svg",
+      "og:image": "https://docs.dirtview.com/og-image.png",
+      "twitter:image": "https://docs.dirtview.com/og-image.png",
       "twitter:card": "summary_large_image"
     },
     "organization": {

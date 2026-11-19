@@ -9,6 +9,38 @@
   --dv-border: #E5DDD4;
 }
 
+/* Match the marketing site's warm cream in both the reading area and sidebar. */
+html.light,
+html.light body,
+html.light main,
+html.light aside {
+  background-color: var(--dv-cream);
+}
+
+html.dark,
+html.dark body,
+html.dark main,
+html.dark aside {
+    background-color: var(--dv-dark);
+}
+
+/* Mintlify supplies the logo variants in the header; keep the visible mark crisp. */
+img[alt="light logo"],
+img[alt="dark logo"] {
+  width: auto !important;
+  height: 32px !important;
+}
+
+a[class*="card"] {
+  background-color: #FFFFFF !important;
+  border-color: var(--dv-border) !important;
+}
+
+html.dark a[class*="card"] {
+  background-color: #252525 !important;
+  border-color: #3B3531 !important;
+}
+
 :focus-visible {
   outline: 3px solid var(--dv-accent) !important;
   outline-offset: 3px;
