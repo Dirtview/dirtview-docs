@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap');
+
+/* DirtView brand layer: warm, quiet, and easy to scan in the field. */
+:root {
+  --dv-brown: #6B3A2C;
+  --dv-accent: #C67B4E;
+  --dv-cream: #F8F5F0;
+  --dv-dark: #1E1E1E;
+  --dv-border: #E5DDD4;
+}
+
+/* Match the marketing site's warm cream in both the reading area and sidebar. */
+html.light,
+html.light body,
+html.light main,
+html.light aside {
+  background-color: var(--dv-cream);
+}
+
+html.dark,
+html.dark body,
+html.dark main,
+html.dark aside {
+    background-color: var(--dv-dark);
+}
+
+/* Mintlify supplies the logo variants in the header; keep the visible mark crisp. */
+img[alt="light logo"],
+img[alt="dark logo"] {
+  width: auto !important;
+  height: 32px !important;
+}
+
+a[class*="card"] {
+  background-color: #FFFFFF !important;
+  border-color: var(--dv-border) !important;
+}
+
+html.dark a[class*="card"] {
+  background-color: #252525 !important;
+  border-color: #3B3531 !important;
+}
+
+:focus-visible {
+  outline: 3px solid var(--dv-accent) !important;
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em;
+}
+
+code, pre, kbd {
+  font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Keep cards responsive to touch without adding a heavy shadow system. */
+a[class*="card"] {
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+a[class*="card"]:hover {
+  border-color: var(--dv-accent) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a[class*="card"] { transition: none; }
+}
