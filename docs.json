@@ -1,21 +1,50 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "DirtView Help Center",
-  "description": "Simple, step-by-step guides for everyone on the job — in English and Spanish.",
+  "description": "Clear, step-by-step DirtView guides for construction crews, foremen, project managers, and administrators — in English and Spanish.",
   "colors": {
-    "primary": "#B85228",
-    "light": "#E58254",
-    "dark": "#8F3F1E"
+    "primary": "#6B3A2C",
+    "light": "#C67B4E",
+    "dark": "#6B3A2C"
+  },
+  "background": {
+    "color": {
+      "light": "#F8F5F0",
+      "dark": "#1E1E1E"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Bricolage Grotesque",
+      "weight": 600
+    },
+    "body": {
+      "family": "Geist",
+      "weight": 400
+    }
   },
   "appearance": {
     "default": "system"
   },
   "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
-    "href": "/"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
+    "href": "https://dirtview.com"
+  },
+  "seo": {
+    "metatags": {
+      "og:site_name": "DirtView Help Center",
+      "og:image": "https://docs.dirtview.com/og-image.png",
+      "twitter:image": "https://docs.dirtview.com/og-image.png",
+      "twitter:card": "summary_large_image"
+    },
+    "organization": {
+      "name": "DirtView",
+      "url": "https://dirtview.com",
+      "logo": "https://dirtview.com/logo.svg"
+    }
   },
   "search": {
     "prompt": "How do I create an RFI?"
@@ -190,6 +219,10 @@
   "navbar": {
     "links": [
       {
+        "label": "dirtview.com",
+        "href": "https://dirtview.com"
+      },
+      {
         "label": "Video library",
         "href": "https://docs.dirtview.com/video-library"
       },
@@ -200,12 +233,37 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Open DirtView",
-      "href": "https://dirtview.com"
+      "label": "Book a Demo",
+      "href": "https://dirtview.com/contact"
     }
   },
   "footer": {
     "links": [
+      {
+        "header": "DirtView",
+        "items": [
+          {
+            "label": "Management Suite",
+            "href": "https://dirtview.com/products/management-suite"
+          },
+          {
+            "label": "Agents",
+            "href": "https://dirtview.com/products/agents"
+          },
+          {
+            "label": "Glasses",
+            "href": "https://dirtview.com/products/glasses"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://dirtview.com/pricing"
+          },
+          {
+            "label": "Guides",
+            "href": "https://dirtview.com/guides"
+          }
+        ]
+      },
       {
         "header": "Guides",
         "items": [
