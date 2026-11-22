@@ -31,7 +31,7 @@
   "logo": {
     "light": "/logo/light.png",
     "dark": "/logo/dark.png",
-    "href": "https://docs.dirtview.com"
+    "href": "https://dirtview.com"
   },
   "seo": {
     "metatags": {
@@ -219,6 +219,10 @@
   "navbar": {
     "links": [
       {
+        "label": "dirtview.com",
+        "href": "https://dirtview.com"
+      },
+      {
         "label": "Video library",
         "href": "https://docs.dirtview.com/video-library"
       },
@@ -235,6 +239,31 @@
   },
   "footer": {
     "links": [
+      {
+        "header": "DirtView",
+        "items": [
+          {
+            "label": "Management Suite",
+            "href": "https://dirtview.com/products/management-suite"
+          },
+          {
+            "label": "Agents",
+            "href": "https://dirtview.com/products/agents"
+          },
+          {
+            "label": "Glasses",
+            "href": "https://dirtview.com/products/glasses"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://dirtview.com/pricing"
+          },
+          {
+            "label": "Guides",
+            "href": "https://dirtview.com/guides"
+          }
+        ]
+      },
       {
         "header": "Guides",
         "items": [
