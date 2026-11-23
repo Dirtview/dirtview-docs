@@ -31,7 +31,7 @@
   "logo": {
     "light": "/logo/light.png",
     "dark": "/logo/dark.png",
-    "href": "https://docs.dirtview.com"
+    "href": "https://dirtview.com"
   },
   "seo": {
     "metatags": {
@@ -265,14 +265,6 @@
           }
         ]
       }
-    ]
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "claude",
-      "chatgpt"
     ]
   }
 }
